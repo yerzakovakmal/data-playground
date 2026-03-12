@@ -45,12 +45,10 @@ This dashboard was built in Tableau to visualize covid infections per country, p
 ## Key SQL Analysis (!Written in SQLite!)
 ### Global Death Analysis
 ```sql
-SELECT 
-SUM(new_cases) AS total_cases,
-SUM(new_deaths) AS total_deaths,
-(SUM(new_deaths) / SUM(new_cases)) * 100 AS death_percentage
+SELECT date, SUM(new_cases) AS total_cases, SUM(cast(new_deaths as INTEGER)) AS total_deaths, SUM(cast(new_deaths as INTEGER)) * 1.0 / SUM(new_cases) * 100 as DeathPercentageGlobally
 FROM covid_deaths
-WHERE continent IS NOT NULL;
+GROUP BY date
+ORDER BY DeathPercentageGlobally;
 ```
 
 ### Countries With Highest Infection Rate
