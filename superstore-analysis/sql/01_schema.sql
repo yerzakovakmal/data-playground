@@ -37,6 +37,7 @@ CREATE TABLE orders (
     is_unprofitable BOOLEAN,
 
     -- Keys
+
     FOREIGN KEY(product_id) REFERENCES products(product_id),
     FOREIGN KEY(customer_id) REFERENCES customers(customer_id),
     FOREIGN KEY(location_id) REFERENCES locations(location_id)
