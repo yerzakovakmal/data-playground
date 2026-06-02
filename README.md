@@ -85,13 +85,46 @@ Project folder:
     ├── tableau.sql
     └── tableu.csv
 ```
+---
+### Superstore Sales Analytics
+
+This project analyzes US Superstore sales data using **Python and PostgreSQL**
+
+Topics explored include:
+
+- sales and revenue trends
+- customer segment profiling
+- product portfolio and profitability
+- discount impact and regional performance
+
+Project folder:
+```
+├── README.md
+├── data
+│   ├── raw
+│   └── processed
+├── guide.md
+├── insights_summary.md
+├── notebooks
+│   ├── 00_cleaning.ipynb
+│   ├── 01_eda.ipynb
+│   └── 02_visualization.ipynb
+├── reports
+├── requirements.txt
+└── sql
+    ├── 01_schema.sql
+    ├── 02_explore.sql
+    ├── 03_sales_analysis.sql
+    ├── 04_customer_analysis.sql
+    └── 05_product_analysis.sql
+```
 
 ---
 
 ## Future Projects
 This repository will continue to grow with new data analysis project
 
-- Nashville Housing Data Analysis
+- Spotify Tracks Analysis
 - Economic Data Analysis
 - Stock Market datasets
 - Public Health Statistics
